@@ -1,0 +1,49 @@
+---
+layout: default
+title: spoonLabs.Cards
+---
+
+<!-- Background container -->
+<div class="background"></div>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <a href="/">
+            <img src="{{ '/images/spoonLabsHeader.png' | relative_url }}" alt="spoonLabs Logo" class="header-logo">
+        </a>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="/ebay/ebay.html" target="_blank" rel="noopener">eBay</a>
+    <a href="https://www.instagram.com/spoonlabs/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@spoonlabs" target="_blank" rel="noopener">TikTok</a>
+    <a href="/about.html">About</a>
+</nav>
+
+<div class="announcement" style="text-align: center; padding: 20px;">
+    <h1>Welcome to spoonLabs!</h1>
+    <p>Join me for my first live stream on Whatnot this Friday at 9 PM EST!</p>
+    <a href="https://www.whatnot.com/live/79439641-bf50-4ce8-abce-592a5d53600e" target="_blank">Click here to watch the show</a>
+</div>
+
+<!-- Blog Posts Section -->
+<div class="blog-posts" style="padding: 20px;">
+    <h2>Daily Blog Posts</h2>
+    <ul>
+        {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <p>{{ post.date | date: "%B %d, %Y" }}</p>
+                <p>{{ post.excerpt }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; {{ site.time | date: "%Y" }} spoonLabs. All rights reserved.</p>
+</footer>
