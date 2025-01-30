@@ -1,0 +1,7 @@
+title: "spoonLabs.cards"
+description: "Musing of some guy"
+baseurl: "" # Leave blank for GitHub Pages
+url: "https://spoonshuge.github.io/Jekyll-spoonLabs.cards" # Update this if using a custom domain
+theme: minima # Optional Jekyll theme, can be customized later
+plugins:
+  - jekyll-feed
